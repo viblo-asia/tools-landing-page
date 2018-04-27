@@ -1,0 +1,19 @@
+.viblo-section {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    &--no-height {
+        min-height: inherit;
+    }
+    &__title {
+        font-family: 'Vidaloka', sans-serif;
+        font-size: 5rem;
+        font-weight: bold;
+        letter-spacing: -2px;
+        margin-bottom: 2rem;
+        margin-top: 5rem;
+    }
+    .viblo-section__description {
+        margin-bottom: 2rem;
+    }
+}

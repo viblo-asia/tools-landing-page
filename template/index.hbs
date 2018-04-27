@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="application-name" content="Viblo"/>
+        <meta property="og:title" content="Viblo Tools"/>
+        <meta property="og:site_name" content="Viblo Tools"/>
+
+        <meta property="og:title" content="Viblo Tools"/>
+        <meta property="og:description" content=""/>
+        <meta property="og:url" content="https://viblo.asia/viblo-tools"/>
+        <meta
+            name="keywords"
+            content="Viblo, Viblo Tools, Viblo Atom Plugin, Viblo browswer extension"
+        />
+        <title>{{ htmlWebpackPlugin.options.title }}</title>
+    </head>
+    <body>
+        <div class="viblo">
+            {{> partials/site/navbar }}
+            {{> partials/site/summary }}
+            {{> partials/browser-extension/introduction }}
+            {{> partials/atom-plugin/introduction }}
+            {{> partials/site/footer }}
+        </div>
+    </body>
+</html>

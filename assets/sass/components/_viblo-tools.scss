@@ -1,0 +1,43 @@
+$viblo-tools-animation-timing: 360s;
+$section-offset-bottom: 3.2rem;
+$circle-size-lg: 38rem;
+$circle-size-sm: 52rem;
+$item-size-sm: 4.2rem;
+$item-size-lg: 10rem;
+$circle-lg-colors: #e58e26, #e55039, #4a69bd, #60a3bc, #78e08f;
+
+.viblo-tools {
+    &--animated {
+        animation: vibloToolsRotate $viblo-tools-animation-timing linear infinite;
+        .viblo-tool-item__body {
+            animation: keepVibloToolIsNotRotate $viblo-tools-animation-timing linear infinite;
+        }
+    }
+
+    &__list {
+        padding: 0;
+        position: relative;
+        .tool-item {
+            background: $white;
+            box-shadow: 0 5px 16px 1px rgba(0, 0, 0, 0.5);
+            @include border-radius(50%);
+            padding: 0.625rem;
+            position: relative;
+            &--lg {
+                @include place-items-on-circle(5, $circle-size-lg, $item-size-lg, 10);
+                @include fill-children-background-colors($circle-lg-colors);
+                color: $white;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            &--sm {
+                @include place-items-on-circle(5, $circle-size-sm, $item-size-sm, -20, 10);
+                background: rgb(236, 240, 241);
+                font-size: 0.8rem;
+            }
+            &__body {
+                text-align: center;
+            }
+        }
+    }
+}

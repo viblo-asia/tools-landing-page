@@ -1,0 +1,30 @@
+@mixin place-items-on-circle($item-count, $circle-size, $item-size, $rot: 0, $index: 1) {
+    display: block;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    width:  $item-size;
+    height: $item-size;
+    margin: -($item-size / 2);
+
+    $angle: (360 / $item-count);
+
+    @for $i from $index through $item-count {
+        &:nth-of-type(#{$i}) {
+            transform:
+                rotate($rot * 1deg)
+                translate($circle-size / 2)
+                rotate($rot * -1deg);
+        }
+
+        $rot: $rot + $angle;
+    }
+}
+
+@mixin fill-children-background-colors($circle-lg-colors) {
+    @for $i from 1 through length($circle-lg-colors) {
+        &:nth-child(#{length($circle-lg-colors)}n+#{$i}) {
+            background: nth($circle-lg-colors, $i);
+        }
+    }
+}

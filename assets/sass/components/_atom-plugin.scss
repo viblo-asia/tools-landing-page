@@ -1,0 +1,44 @@
+.viblo-atom-plugin {
+    background: rgb(55, 53, 54);
+    color: $white;
+    margin-bottom: 12rem;
+    width: 100%;
+    .viblo-section__title {
+        color: rgb(249, 215, 78)
+    }
+}
+
+.atom-plugin-preview {
+    margin-bottom: -10rem;
+    margin-top: 2rem;
+    width: 100%;
+    .swiper-slide, .swiper-wrapper {
+        background: transparent !important;
+    }
+
+    .swiper-slide {
+        /* Center slide text vertically */
+        align-items: center;
+        -webkit-align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-align: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+    }
+
+    .item {
+        width: 100%;
+        @extend .flex-center;
+        img {
+            background: $white;
+            max-width: 100%;
+            padding: 0.6rem;
+        }
+    }
+}
