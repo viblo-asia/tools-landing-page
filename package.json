@@ -1,0 +1,35 @@
+{
+  "name": "viblo-tools-ldp",
+  "version": "1.0.0",
+  "main": "./assets/js/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development node_modules/.bin/webpack-dev-server --hot --inline --progress",
+    "build": "cross-env NODE_ENV=production node_modules/.bin/webpack --progress --hide-modules"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "cross-env": "^5.1.4",
+    "css-loader": "^0.28.11",
+    "dotenv": "^5.0.1",
+    "extract-text-webpack-plugin": "next",
+    "fast-sass-loader": "^1.4.1",
+    "file-loader": "^1.1.11",
+    "handlebars": "^4.0.11",
+    "handlebars-loader": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.8.3",
+    "style-loader": "^0.20.3",
+    "webpack": "4.3",
+    "webpack-cli": "^2.0.15",
+    "webpack-dev-server": "^3.1.3"
+  },
+  "dependencies": {
+    "animate.css": "^3.6.1",
+    "bootstrap": "^4.1.0",
+    "swiper": "^4.2.2"
+  }
+}

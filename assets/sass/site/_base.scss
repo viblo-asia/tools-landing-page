@@ -1,0 +1,23 @@
+@import "fonts";
+
+body, .viblo-page {
+    font-family: $font-family-base;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.viblo-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.flex-center {
+    @extend .d-flex;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+    @extend .text-center;
+}

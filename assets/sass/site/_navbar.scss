@@ -1,0 +1,15 @@
+.viblo-navigation {
+    height: $navbar-height;
+
+    .navbar-brand {
+        font-size: $font-size-base;
+        padding-top: 4px;
+        & > img {
+            height: 1.5em;
+        }
+    }
+
+    &--shadow {
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "label": "Chrome extension",
+    "size": "lg"
+  },
+  {
+    "label": "Atom plugin",
+    "size": "lg"
+  },
+  {
+    "label": "Viblo SDK",
+    "size": "lg"
+  },
+  {
+    "label": "Viblo mobile app",
+    "size": "lg"
+  },
+  {
+    "label": "Web application",
+    "size": "lg"
+  },
+  {
+    "label": "Docker",
+    "size": "sm"
+  },
+  {
+    "label": "Postgres",
+    "size": "sm"
+  },
+  {
+    "label": "Mongodb",
+    "size": "sm"
+  },
+  {
+    "label": "Vue.js",
+    "size": "sm"
+  },
+  {
+    "label": "Webpack",
+    "size": "sm"
+  }
+]

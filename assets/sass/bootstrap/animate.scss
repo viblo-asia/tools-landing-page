@@ -1,0 +1,26 @@
+@import "~animate.css/source/_base.css";
+@import "~animate.css/source/sliding_entrances/slideInDown.css";
+
+@keyframes vibloToolsRotate {
+    from {
+        -webkit-transform: rotate(-16deg);
+        transform: rotate(-16deg)
+    }
+
+    to {
+        -webkit-transform: rotate(-376deg);
+        transform: rotate(-376deg)
+    }
+}
+
+@keyframes keepVibloToolIsNotRotate {
+    from {
+        -webkit-transform: rotate(16deg);
+        transform: rotate(16deg)
+    }
+
+    to {
+        -webkit-transform: rotate(376deg);
+        transform: rotate(376deg)
+    }
+}
