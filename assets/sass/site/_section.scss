@@ -12,6 +12,12 @@
         letter-spacing: -2px;
         margin-bottom: 2rem;
         margin-top: 5rem;
+        @include media-breakpoint-down(xs) {
+            font-size: 2.5rem;
+        }
+        @include media-breakpoint-up(xs) {
+            font-size: 4rem;
+        }
     }
     .viblo-section__description {
         margin-bottom: 2rem;

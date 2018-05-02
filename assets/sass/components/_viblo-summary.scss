@@ -1,5 +1,5 @@
 .viblo-summary {
-    background: radial-gradient(circle at right bottom, rgb(57, 117, 183) 0px, rgb(87, 150, 204) 100%);
+    background: radial-gradient(circle at right top, rgb(57, 117, 183) 0px, rgb(87, 150, 204) 100%);
     height: calc(100vh - 60px);
     margin: 0;
     overflow: hidden;
@@ -15,6 +15,9 @@
             letter-spacing: -2px;
             margin-top: 0.5rem;
             text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.5);
+            @include media-breakpoint-down(xs) {
+                font-size: 4rem;
+            }
         }
         &__description {
             color: rgb(197, 218, 239);
@@ -24,17 +27,24 @@
         .arrow-bottom {
             border: 0.3rem solid;
             border-color: $white transparent transparent $white;
+            box-shadow: -4px -3px 3px 0 rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: -4px -3px 3px 0 rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: -4px -3px 3px 0 rgba(0, 0, 0, 0.5);
             cursor: pointer;
             height: 3rem;
             transform: rotate(-135deg);
             width: 3rem;
-            -webkit-box-shadow: -4px -3px 3px 0 rgba(0, 0, 0, 0.5);
-            -moz-box-shadow: -4px -3px 3px 0 rgba(0, 0, 0, 0.5);
-            box-shadow: -4px -3px 3px 0 rgba(0, 0, 0, 0.5);
+            @include media-breakpoint-down(xs) {
+                height: 2.5rem;
+                width: 2.5rem;
+            }
         }
     }
 
     &__tools {
         position: absolute;
+        @include media-breakpoint-down(xs) {
+            display: none !important;
+        }
     }
 }

@@ -9,6 +9,9 @@ $center-height: 40px;
         position: relative;
         z-index: 400;
     }
+    &__preview {
+        overflow-x: hidden;
+    }
 }
 
 .extension-images-wrapper {
@@ -28,11 +31,24 @@ $center-height: 40px;
             width: auto;
         }
         &--highlight img {
-            box-shadow: 0 -7px 10px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.5);
             height: $image-height + $center-height;
             position: relative;
             top: -$center-height;
             width: auto;
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+        .item {
+            img {
+                max-height: $image-height - 100px;
+            }
+            &--highlight img {
+                max-height: $image-height + $center-height - 100px;
+            }
         }
     }
 }
@@ -51,11 +67,11 @@ $center-height: 40px;
 
 .btn-get-extension {
     background: $primary;
+    border: none;
     border-radius: 100px;
     color: $white;
     font-size: 1.125rem;
     padding: 0.825rem 3rem;
-    border: none;
     &:hover {
         background: lighten($primary, 10);
         color: $white;
