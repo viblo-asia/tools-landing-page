@@ -19,9 +19,19 @@
         <div class="viblo-tools__list">
             {{#tool_items as |tools|}}
                 {{#each tools}}
-                    <div class="tool-item tool-item--{{this.size}} flex-center">
+                    <div
+                        class="tool-item tool-item--{{this.size}} flex-center"
+                        title="{{this.label}}"
+                    >
                         <div class="viblo-tool-item__body">
-                            {{ this.label }}
+                            {{#if this.icon }}
+                                <img
+                                    src="{{this.icon}}"
+                                    alt="{{this.label}}"
+                                />
+                            {{else}}
+                                {{ this.label }}
+                            {{/if}}
                         </div>
                     </div>
                 {{/each}}

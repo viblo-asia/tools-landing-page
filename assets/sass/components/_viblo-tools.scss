@@ -34,6 +34,9 @@ $circle-lg-colors: #e58e26, #e55039, #4a69bd, #60a3bc, #78e08f;
                 @include place-items-on-circle(5, $circle-size-sm, $item-size-sm, -20, 10);
                 background: rgb(236, 240, 241);
                 font-size: 0.8rem;
+                img {
+                    max-width: 85%;
+                }
             }
             &__body {
                 text-align: center;

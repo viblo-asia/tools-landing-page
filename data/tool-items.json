@@ -21,22 +21,27 @@
   },
   {
     "label": "Docker",
-    "size": "sm"
+    "size": "sm",
+    "icon": "https://images.viblo.asia/full/d136b4c1-c48c-458a-ad8d-39b153865563.png"
   },
   {
     "label": "Postgres",
-    "size": "sm"
+    "size": "sm",
+    "icon": "https://www.postgresql.org/media/img/about/press/elephant.png"
   },
   {
     "label": "Mongodb",
-    "size": "sm"
+    "size": "sm",
+    "icon": "https://images.viblo.asia/full/e7dc7d88-8230-4e3a-b27b-fb5b2059ee94.png"
   },
   {
     "label": "Vue.js",
-    "size": "sm"
+    "size": "sm",
+    "icon": "https://vuejs.org/images/logo.png"
   },
   {
     "label": "ELK stack",
-    "size": "sm"
+    "size": "sm",
+    "icon": "https://images.viblo.asia/full/5c4cade5-bdfe-45ca-a5ad-250f6e6a23a7.png"
   }
 ]
