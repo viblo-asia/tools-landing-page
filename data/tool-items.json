@@ -1,10 +1,10 @@
 [
   {
-    "label": "Chrome extension",
+    "label": "Viblo Chrome extension",
     "size": "lg"
   },
   {
-    "label": "Atom plugin",
+    "label": "Viblo Atom plugin",
     "size": "lg"
   },
   {
@@ -12,7 +12,7 @@
     "size": "lg"
   },
   {
-    "label": "Viblo mobile app",
+    "label": "Viblo Smartphone app",
     "size": "lg"
   },
   {
@@ -36,7 +36,7 @@
     "size": "sm"
   },
   {
-    "label": "Webpack",
+    "label": "ELK stack",
     "size": "sm"
   }
 ]

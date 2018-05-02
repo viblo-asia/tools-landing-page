@@ -55,7 +55,9 @@ $center-height: 40px;
     color: $white;
     font-size: 1.125rem;
     padding: 0.825rem 3rem;
+    border: none;
     &:hover {
         background: lighten($primary, 10);
+        color: $white;
     }
 }
