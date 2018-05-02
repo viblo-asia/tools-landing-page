@@ -1,7 +1,31 @@
 .viblo-footer {
-    background: $white;
-    margin-top: 1rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    background: rgb(248, 248, 248);
+    color: #424242;
+    margin-top: 17rem;
+    padding-bottom: 3.75rem;
+    padding-top: 2.5rem;
     width: 100%;
+    a {
+        color: inherit;
+        font-size: 1.1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        text-decoration: none;
+    }
+    .footer-brand {
+        img {
+            margin-right: 1.5rem;
+            width: 6.25rem;
+        }
+        &__text {
+            @include media-breakpoint-down(lg) {
+                display: none;
+            }
+        }
+    }
+    .links {
+        display: inline-flex;
+        list-style-type: none;
+        padding-left: 0;
+    }
 }
