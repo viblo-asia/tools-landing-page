@@ -33,12 +33,38 @@
     }
 
     .item {
+        background: rgb(44, 48, 55);
+        position: relative;
         width: 100%;
         @extend .flex-center;
-        img {
-            background: $white;
+        &__image {
+            filter: opacity(0.2);
+            -webkit-filter: opacity(0.2);
             max-width: 100%;
-            padding: 0.6rem;
+        }
+        &__body {
+            background: rgba(0, 0, 0, 0.8);
+            border: solid 0.4rem;
+            color: $white;
+            display: block;
+            padding: 1rem 3rem;
+            position: absolute;
+            .title {
+                font-weight: bold;
+            }
+            p {
+                margin-top: 1.5rem;
+                margin-bottom: 0;
+            }
         }
     }
+}
+
+.atom-install-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }

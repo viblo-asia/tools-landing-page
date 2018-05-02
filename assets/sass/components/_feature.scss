@@ -1,0 +1,14 @@
+.feature {
+    margin-bottom: 2rem;
+    &__title {
+        font-family: Vidaloka, sans-serif;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    &__content {
+        font-size: 1rem;
+        text-align: justify;
+    }
+}
