@@ -2,9 +2,7 @@ import Swiper from 'swiper/dist/js/swiper.js'
 import 'swiper/dist/css/swiper.css'
 
 new Swiper('#atom-plugin-preview', {
-    autoplay: {
-        delay: 5000,
-    },
+    grabCursor: true,
     centeredSlides: true,
     preloadImages: false,
     lazy: true,
