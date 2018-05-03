@@ -4,6 +4,7 @@ const { resolve } = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 const mode = process.env.NODE_ENV || 'production'
@@ -111,6 +112,10 @@ module.exports = {
     },
     optimization: {
         minimizer: [
+            new UglifyJsPlugin({
+                cache: true,
+                parallel: true,
+            }),
             new OptimizeCssAssetsPlugin({
                 assetNameRegExp: /\.css$/g,
                 cssProcessor: require('cssnano'),
