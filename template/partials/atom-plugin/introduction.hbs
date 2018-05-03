@@ -6,13 +6,19 @@
                     Viblo Atom Plugin
                 </h2>
                 <p class="viblo-section__description text-center">
-                    Atom is a free IDE - A hackable text editor for the 21st Century. <br/>
-                    It's open source and developed by Github. <br/>
-                    Now, Viblo is available on Atom <a target="_blank" href="https://atom.io/packages/viblo">at here</a>. <br><br>
+                    <a target="_blank" href="https://atom.io">Atom</a> is a free IDE - A hackable text editor for the
+                                                                       21st Century. <br/>
+                                                                       It's open source and developed by Github. <br/>
+                                                                       Now, Viblo is available on Atom.
+                </p>
+                <p class="viblo-section__description text-center">
                     <strong>
                         Let's take a tour of Viblo Atom Plugin!
                     </strong>
                 </p>
+                {{#atom_plugin_icons as |icons|}}
+                    {{> ../site/ref-icons icons=icons }}
+                {{/atom_plugin_icons}}
             </div>
         </div>
 

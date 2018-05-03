@@ -1,0 +1,19 @@
+<div class="refs text-center">
+    {{#each icons}}
+        <a
+            target="_blank"
+            class="refs__item"
+            href="{{ this.link }}"
+            title="{{ this.label }}"
+        >
+            {{#if this.iconClasses}}
+                <i class="{{ this.iconClasses }}"></i>
+            {{else}}
+                <img
+                    src="{{ this.image }}"
+                    alt="{{this.label }}"
+                />
+            {{/if}}
+        </a>
+    {{/each}}
+</div>

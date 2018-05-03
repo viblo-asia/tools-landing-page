@@ -1,0 +1,17 @@
+[
+  {
+    "label": "See Viblo Atom package",
+    "link": "https://atom.io/packages/viblo",
+    "image": "https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/logo-small-44ca4a47bb1ea4a040921b7dc85f3abb.png"
+  },
+  {
+    "label": "Viblo Atom Plugin's sources",
+    "link": "https://github.com/viblo-asia/atom-plugin",
+    "iconClasses": "fab fa-github"
+  },
+  {
+    "label": "See more informations in viblo.asia",
+    "link": "https://viblo.asia/announcements/gioi-thieu-viblos-atom-plugin-djeZ1agmZWz",
+    "image": "favicon.ico"
+  }
+]

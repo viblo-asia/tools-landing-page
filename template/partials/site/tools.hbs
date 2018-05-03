@@ -1,0 +1,23 @@
+<div class="viblo-summary__tools viblo-tools viblo-tools--animated">
+    <div class="viblo-tools__list">
+        {{#tool_items as |tools|}}
+            {{#each tools}}
+                <div
+                    class="tool-item tool-item--{{this.size}} flex-center"
+                    title="{{this.label}}"
+                >
+                    <div class="viblo-tool-item__body">
+                        {{#if this.icon }}
+                            <img
+                                src="{{this.icon}}"
+                                alt="{{this.label}}"
+                            />
+                        {{else}}
+                            {{ this.label }}
+                        {{/if}}
+                    </div>
+                </div>
+            {{/each}}
+        {{/tool_items}}
+    </div>
+</div>

@@ -19,7 +19,27 @@
             font-size: 4rem;
         }
     }
-    .viblo-section__description {
+    &__description {
         margin-bottom: 2rem;
+    }
+}
+
+.refs {
+    .refs__item {
+        font-size: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-decoration: none;
+        .fa-chrome {
+            color: rgb(65, 132, 238);
+        }
+        .fa-github {
+            color: rgb(54, 54, 54);
+        }
+        img {
+            max-height: 1.9rem;
+            position: relative;
+            top: -2px;
+        }
     }
 }

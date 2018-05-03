@@ -5,11 +5,15 @@
                 <h2 class="viblo-section__title text-center">
                     Chrome extension
                 </h2>
-                <div class="viblo-section__description flex-center">
-                    <p>
+                <div class="viblo-section__description">
+                    <p class="flex-center">
                         With Viblo Chrome extension you get Viblo contents easy by 1 click.<br/>
                         See newest feed without web tab.
                     </p>
+
+                    {{#extension_icons as |icons|}}
+                        {{> ../site/ref-icons icons=icons }}
+                    {{/extension_icons}}
                 </div>
             </div>
         </div>
@@ -56,7 +60,8 @@
                         target="_blank"
                         href="https://chrome.google.com/webstore/detail/viblos-news-feed/mliahmjgdpkkicelofhbhgiidgljijmj"
                     >
-                        Add to Chrome
+                        <i class="fab fa-chrome brand-icon"></i>&nbsp;
+                        <span>Add to Chrome</span>
                     </a>
                 </div>
             </div>
