@@ -4,19 +4,23 @@ const { resolve } = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+
+const mode = process.env.NODE_ENV || 'production'
+const isProduction = mode === 'production'
 
 const extractCSS = new ExtractTextPlugin({
-    disable: process.env.NODE_ENV !== 'production',
+    disable: !isProduction,
     filename: 'css/vendor.[hash].css',
 })
 
 const extractSASS = new ExtractTextPlugin({
-    disable: process.env.NODE_ENV !== 'production',
+    disable: !isProduction,
     filename: 'css/app.[hash].css',
 })
 
 module.exports = {
-    mode: process.env.NODE_ENV || 'production',
+    mode,
     entry: [
         './assets/js/index.js',
         './assets/sass/app.scss',
@@ -86,8 +90,7 @@ module.exports = {
             '~': resolve(__dirname),
         }
     },
-    plugins: [
-        new CleanWebpackPlugin('dist'),
+    plugins: (isProduction ? [new CleanWebpackPlugin('dist')] : []).concat([
         extractCSS,
         extractSASS,
         new HtmlWebpackPlugin({
@@ -98,12 +101,22 @@ module.exports = {
                 trackingId: process.env.GOOGLE_ANALYTICS_TRACK_ID
             },
         }),
-    ],
+    ]),
     devServer: {
         historyApiFallback: true,
         noInfo: false,
         overlay: true,
         host: 'localhost',
         port: 8001
-    }
+    },
+    optimization: {
+        minimizer: [
+            new OptimizeCssAssetsPlugin({
+                assetNameRegExp: /\.css$/g,
+                cssProcessor: require('cssnano'),
+                cssProcessorOptions: { discardComments: { removeAll: true } },
+                canPrint: true
+            }),
+        ]
+    },
 }
