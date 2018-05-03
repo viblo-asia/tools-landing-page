@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8"/>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta name="application-name" content="Viblo"/>
-        <meta property="og:title" content="Viblo Tools"/>
         <meta property="og:site_name" content="Viblo Tools"/>
-
         <meta property="og:title" content="Viblo Tools"/>
-        <meta property="og:description" content=""/>
-        <meta property="og:url" content="https://viblo.asia/viblo-tools"/>
+        <meta
+            property="og:description"
+            content="Viblo Tools - Open source - Free service for technical knowledge sharing."
+        />
         <meta
             name="keywords"
-            content="Viblo, Viblo Tools, Viblo Atom Plugin, Viblo browswer extension"
+            content="Viblo, Viblo Tools, Viblo Atom Plugin, Viblo browswer extension, Viblo open source"
         />
         <title>{{ htmlWebpackPlugin.options.title }}</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"/>
@@ -26,6 +28,7 @@
             {{> partials/browser-extension/introduction }}
             {{> partials/atom-plugin/introduction }}
             {{> partials/site/footer }}
+            {{> partials/site/google-analytics }}
         </div>
     </body>
 </html>
