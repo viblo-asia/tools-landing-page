@@ -1,0 +1,17 @@
+[
+  {
+    "label": "Add to Chrome",
+    "link": "https://chrome.google.com/webstore/detail/viblos-news-feed/mliahmjgdpkkicelofhbhgiidgljijmj",
+    "iconClasses": "fab fa-chrome"
+  },
+  {
+    "label": "Viblo Chrome Extension's sources",
+    "link": "https://github.com/viblo-asia/browser-extension",
+    "iconClasses": "fab fa-github is-white"
+  },
+  {
+    "label": "See more Viblo Chrome Extension information in viblo.asia",
+    "link": "https://viblo.asia/announcements/gioi-thieu-viblos-browser-extension-L4x5xQPrKBM",
+    "image": "favicon.ico"
+  }
+]

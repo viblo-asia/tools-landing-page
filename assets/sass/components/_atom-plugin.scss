@@ -6,6 +6,9 @@
     .viblo-section__title {
         color: rgb(249, 215, 78)
     }
+    .fa-github {
+        color: $white !important;
+    }
 }
 
 .atom-plugin-preview {
@@ -88,13 +91,4 @@
             }
         }
     }
-}
-
-.atom-install-title {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    letter-spacing: normal;
-    margin-bottom: 2.5rem;
-    margin-top: 2.5rem;
 }
