@@ -101,6 +101,9 @@ module.exports = {
             googleAnalytics: {
                 trackingId: process.env.GOOGLE_ANALYTICS_TRACK_ID
             },
+            minify: {
+                collapseWhitespace: true
+            }
         }),
     ]),
     devServer: {
