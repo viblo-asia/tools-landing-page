@@ -1,6 +1,7 @@
 .viblo-summary {
-    background: radial-gradient(circle at right top, rgb(57, 117, 183) 0px, rgb(87, 150, 204) 100%);
-    height: calc(100vh - 60px);
+    //background: radial-gradient(circle at right top, rgb(42, 111, 188) 0px, rgb(87, 150, 204) 100%);
+    background: rgb(44, 62, 80);
+    height: 100vh;
     margin: 0;
     overflow: hidden;
     position: relative;
@@ -20,7 +21,7 @@
         }
         &__description {
             color: rgb(197, 218, 239);
-            font-size: 1rem;
+            font-size: 1.125rem;
             line-height: 2;
             max-width: 24rem;
         }

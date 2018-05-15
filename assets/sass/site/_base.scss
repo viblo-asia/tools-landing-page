@@ -19,3 +19,7 @@ body, .viblo-page {
     @extend .align-items-center;
     @extend .text-center;
 }
+
+.hidden {
+    display: none !important;
+}
