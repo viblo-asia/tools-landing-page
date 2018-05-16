@@ -9,6 +9,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 const mode = process.env.NODE_ENV || 'production'
 const isProduction = mode === 'production'
+const publicPath = isProduction ? '/tools/' : ''
 
 const extractCSS = new ExtractTextPlugin({
     disable: !isProduction,
@@ -28,7 +29,8 @@ module.exports = {
     ],
     output: {
         path: resolve(__dirname, 'dist'),
-        filename: 'js/bundle-[hash:5].js'
+        filename: 'js/bundle-[hash:5].js',
+        publicPath
     },
     module: {
         rules: [
