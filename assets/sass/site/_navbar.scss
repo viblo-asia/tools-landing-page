@@ -1,5 +1,6 @@
 .viblo-navigation {
     height: $navbar-height;
+    z-index: 100;
 
     .navbar-brand {
         font-size: $font-size-base;
