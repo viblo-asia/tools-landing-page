@@ -6,20 +6,37 @@
         <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="application-name" content="Viblo"/>
-        <meta property="og:site_name" content="Viblo Tools"/>
-        <meta property="og:title" content="Viblo Tools"/>
-        <meta
-            property="og:description"
-            content="Viblo Tools - Open source - Free service for technical knowledge sharing."
-        />
-        <meta
-            name="keywords"
-            content="Viblo, Viblo Tools, Viblo Atom Plugin, Viblo browswer extension, Viblo open source"
-        />
-        <title>{{ htmlWebpackPlugin.options.title }}</title>
+        {{#meta-seo as |seo|}}
+            <meta name="application-name" content="{{ seo.appName }}"/>
+            <meta name="description" content="{{ seo.description }}"/>
+            <meta name="keywords" content="{{ seo.keywords }}"/>
+
+            <meta property="og:site_name" content="{{ seo.appName }}"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:title" content="{{ seo.title }}"/>
+            <meta property="og:description" content="{{ seo.description }}"/>
+
+            <meta property="og:url" content="{{ seo.url }}"/>
+            <meta property="og:image" content="{{ seo.image }}"/>
+            <meta property="og:image:alt" content="{{ seo.title }}"/>
+
+            <meta name="twitter:title" content="{{ seo.title }}"/>
+            <meta name="twitter:description" content="{{ seo.description }}"/>
+            <meta name="twitter:card" content="summary"/>
+
+            <meta
+                name="google-site-verification"
+                content="{{ htmlWebpackPlugin.options.googleSiteVerification }}"
+            />
+
+            <title>{{ seo.title }}</title>
+        {{/meta-seo}}
+
+        <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vidaloka"/>
+
+        <!-- Font awesome -->
         <script
             defer
             src="https://use.fontawesome.com/releases/v5.0.11/js/brands.js"

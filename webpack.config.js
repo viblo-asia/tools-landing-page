@@ -97,12 +97,12 @@ module.exports = {
         extractCSS,
         extractSASS,
         new HtmlWebpackPlugin({
-            title: 'Viblo Tools',
             template: './template/index.hbs',
             favicon: './assets/images/favicon.ico',
             googleAnalytics: {
                 trackingId: process.env.GOOGLE_ANALYTICS_TRACK_ID
             },
+            googleSiteVerification: 'RKTOz1S8uxhAZHqaOsf6cSvT_pqnPHEyAnlTnlLiiok',
             minify: {
                 collapseWhitespace: true
             }
